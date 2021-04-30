@@ -1,3 +1,11 @@
+@function max($numbers...) {
+    @return m#{a}x(#{numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{numbers});
+}
+
 body {
     background-color: #fff;
     @extend %rubik-400;
@@ -28,6 +36,7 @@ body {
     padding: 22px 0 0 28px;
     font-size: 15px;
     position: relative;
+    outline: black;
 
     &::after {
         content: '';
@@ -35,9 +44,34 @@ body {
         width: 30px;
         height: 15px;
         background-repeat: no-repeat;
-        background-image: url('../images/Shape.svg');
+        background-image: url('../images/icon/shape.svg');
         right: 12px;
         bottom: 17px;
+    }
+}
+
+.button-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 77px;
+
+    &__item {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__btn {
+        @extend %dmsans-700;
+        color: #c9c9c9;
+        transition: color 0.4s;
+        font-size: 16px;
+
+        &:focus {
+            color: black;
+        }
     }
 }
 
@@ -64,4 +98,8 @@ body {
     width: 50px;
     height: 50px;
     fill: #a3bbc8;
+}
+.icon {
+    width: 16px;
+    height: 16px;
 }

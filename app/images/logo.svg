@@ -2,6 +2,7 @@
   <defs>
     <style>
       .cls-1 {
+        fill: #a3bbc8;
         fill-rule: evenodd;
       }
     </style>
