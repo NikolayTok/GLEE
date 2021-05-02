@@ -859,6 +859,11 @@
             border-radius: 50%;
             background-color: #f6f6f6;
             transition: background-color 0.4s;
+            margin-right: 5px;
+
+            &:last-child {
+                margin-right: 0;
+            }
 
             &:hover {
                 background-color: #a3bbc8;
