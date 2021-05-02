@@ -15,7 +15,7 @@ const browserSync = require('browser-sync').create();
 const svgSprite = require('gulp-svg-sprite');
 
 function svgSprites() {
-    return src('app/images/icons/**.svg')
+    return src('app/images/icon/**.svg')
     .pipe(svgSprite({
       mode: {
         stack: {

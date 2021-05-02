@@ -104,7 +104,7 @@
                         </div>
                         <a href="#" class="slider__link">
                             <img src="images/bed.png" alt="Bed" class="slider__bed">
-                            </a>
+                        </a>
                     </div>
                     <div class="slider__item">
                         <div class="slider__content">
@@ -120,6 +120,7 @@
                         <a href="#" class="slider__link">
                             <img src="images/bed.png" alt="Bed" class="slider__bed"> </a>
                     </div>
+
                     <div class="slider__item">
                         <div class="slider__content">
                             <h2 class="slider__title">
@@ -882,16 +883,16 @@
             </div>
     </section>
 
-    <div class="decor-video" style="background-image: url('images/video-b.jpg');">
+    <div class="decor-video" style="background-image: url('images/video-bg.jpg');">
 
-        <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-            <svg class="svg">
-                <use xlink:href="images/sprite2.svg#play"></use>
-            </svg>
+        <a class="decor-video__link" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+            <div class="svg-conteiner">
+                <svg class="decor-video__svg">
+                    <use xlink:href="images/sprite.svg#play"></use>
+                </svg>
+            </div>
         </a>
     </div>
-
-
     <section class="portfolio">
         <div class="conteiner-inner">
 
@@ -906,7 +907,9 @@
 
             <div class="portfolio__slider">
                 <div class="portfolio__item">
-                    <img src="images/portfolio/portfolio1.jpg" alt="Decor example" class="portfolio__img">
+                    <a href="images/portfolio/portfolio1.jpg" data-fancybox="images" data-caption="My caption">
+                        <img src="images/portfolio/portfolio1.jpg" alt="Decor example" class="portfolio__img">
+                    </a>
                     <a href="#" class="portfolio__link--slider">news</a>
                     <div class="portfolio__content">
                         <div class="portfolio__text">
@@ -920,7 +923,10 @@
                 </div>
 
                 <div class="portfolio__item">
-                    <img src="images/portfolio/portfolio2.jpg" alt="Decor example" class="portfolio__img">
+                    <a href="images/portfolio/portfolio2.jpg" data-fancybox="images" data-caption="My caption">
+
+                        <img src="images/portfolio/portfolio2.jpg" alt="Decor example" class="portfolio__img">
+                    </a>
                     <a href="#" class="portfolio__link--slider">news</a>
                     <div class="portfolio__content">
                         <div class="portfolio__text">
@@ -934,7 +940,10 @@
                 </div>
 
                 <div class="portfolio__item">
-                    <img src="images/portfolio/portfolio3.jpg" alt="Decor example" class="portfolio__img">
+                    <a href="images/portfolio/portfolio3.jpg" data-fancybox="images" data-caption="My caption">
+
+                        <img src="images/portfolio/portfolio3.jpg" alt="Decor example" class="portfolio__img">
+                    </a>
                     <a href="#" class="portfolio__link--slider">news</a>
                     <div class="portfolio__content">
                         <div class="portfolio__text">
@@ -948,7 +957,10 @@
                 </div>
 
                 <div class="portfolio__item">
-                    <img src="images/portfolio/portfolio1.jpg" alt="Decor example" class="portfolio__img">
+                    <a href="images/portfolio/portfolio1.jpg" data-fancybox="images" data-caption="My caption">
+
+                        <img src="images/portfolio/portfolio1.jpg" alt="Decor example" class="portfolio__img">
+                    </a>
                     <a href="#" class="portfolio__link--slider">news</a>
                     <div class="portfolio__content">
                         <div class="portfolio__text">
@@ -962,7 +974,10 @@
                 </div>
 
                 <div class="portfolio__item">
-                    <img src="images/portfolio/portfolio2.jpg" alt="Decor example" class="portfolio__img">
+                    <a href="images/portfolio/portfolio2.jpg" data-fancybox="images" data-caption="My caption">
+
+                        <img src="images/portfolio/portfolio2.jpg" alt="Decor example" class="portfolio__img">
+                    </a>
                     <a href="#" class="portfolio__link--slider">news</a>
                     <div class="portfolio__content">
                         <div class="portfolio__text">
@@ -976,7 +991,10 @@
                 </div>
 
                 <div class="portfolio__item">
-                    <img src="images/portfolio/portfolio3.jpg" alt="Decor example" class="portfolio__img">
+                    <a href="images/portfolio/portfolio3.jpg" data-fancybox="images" data-caption="My caption">
+
+                        <img src="images/portfolio/portfolio3.jpg" alt="Decor example" class="portfolio__img">
+                    </a>
                     <a href="#" class="portfolio__link--slider">news</a>
                     <div class="portfolio__content">
                         <div class="portfolio__text">
@@ -987,9 +1005,14 @@
                         <a href="#" class="portfolio__link--admin">28 january, 2020</a>
                         <a href="#" class="portfolio__link--admin"> by admin</a>
                     </div>
-
-
                 </div>
+                </div>
+<div class="portfolio__partners">
+    <img src="images/partners/logo1.png" alt="Logo" class="portfolio__logo">
+    <img src="images/partners/logo2.png" alt="Logo" class="portfolio__logo">
+    <img src="images/partners/logo3.png" alt="Logo" class="portfolio__logo">
+    <img src="images/partners/logo4.png" alt="Logo" class="portfolio__logo">
+    <img src="images/partners/logo5.png" alt="Logo" class="portfolio__logo">
             </div>
         </div>
     </section>
@@ -1021,19 +1044,29 @@
                     </h3>
                     <ul class="footer__list">
                         <li class="footer__item">
-                            About us
+                            <a href="#" class="footer__link">
+                                About
+                            </a>
                         </li>
                         <li class="footer__item">
-                            Return Policy
+                            <a href="#" class="footer__link">
+                                Return Policy
+                            </a>
                         </li>
                         <li class="footer__item">
-                            Our Blog
+                            <a href="#" class="footer__link">
+                                Our Blog
+                            </a>
                         </li>
                         <li class="footer__item">
-                            Contact Us
+                            <a href="#" class="footer__link">
+                                Contact Us
+                            </a>
                         </li>
                         <li class="footer__item">
-                            Terms & Condition
+                            <a href="#" class="footer__link">
+                                Terms & Condition
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -1044,16 +1077,24 @@
                     </h3>
                     <ul class="footer__list">
                         <li class="footer__item">
-                            Your Account
+                            <a href="#" class="footer__link">
+                                Your Account
+                            </a>
                         </li>
                         <li class="footer__item">
-                            Checkout
+                            <a href="#" class="footer__link">
+                                Checkout
+                            </a>
                         </li>
                         <li class="footer__item">
-                            Login
+                            <a href="" class="footer__link">
+                                Login
+                            </a>
                         </li>
                         <li class="footer__item">
-                            Register
+                            <a href="#" class="footer__link">
+                                Register
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -1074,24 +1115,32 @@
                 </div>
             </div>
 
-            <div class="footer__bottom">
-                <div class="footer__copy">
+            <div class="footer-bottom">
+                <div class="footer-copy">
                     ©2020 CopyRight Example. All rights reserved.
                 </div>
-                <nav class="footer__bottom-nav">
-                    <ul class="footer__bottom-menu">
-                        <a href="#" class="footer__bottom-link">
-                            Home
-                        </a>
-                        <a href="#" class="footer__bottom-link">
-                            About
-                        </a>
-                        <a href="#" class="footer__bottom-link">
-                            Blog
-                        </a>
-                        <a href="#" class="footer__bottom-link">
-                            Contact
-                        </a>
+                <nav class="footer-bottom__nav">
+                    <ul class="footer-bottom__menu">
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link">
+                                About
+                            </a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link">
+                                Contact
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>

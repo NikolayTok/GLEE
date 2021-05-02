@@ -8,7 +8,10 @@ $(function () {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        arrows: false
+        arrows: false,
+            autoplay: true,
+            autoplaySpeed: 3000
+
     });
 
     var mixer = mixitup('.products__box');

@@ -22,7 +22,6 @@ body {
 
 .conteiner-inner {
     max-width: 1200px;
-    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -37,6 +36,8 @@ body {
     font-size: 15px;
     position: relative;
     outline: black;
+    transition: background-color 0.4s,
+    color 0.4s;
 
     &::after {
         content: '';
@@ -48,6 +49,10 @@ body {
         right: 12px;
         bottom: 17px;
     }
+&:hover {
+    background-color: #fd5e36;
+    color: black;
+}
 }
 
 .button-filter {
