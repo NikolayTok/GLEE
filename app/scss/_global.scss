@@ -14,6 +14,12 @@ body {
     color: #436372;
 }
 
+button {
+    background-color: transparent;
+    padding: 0;
+    border-color: transparent;
+}
+
 .conteiner {
     max-width: 1800px;
     padding: 0 15px;
@@ -22,13 +28,13 @@ body {
 
 .conteiner-inner {
     max-width: 1200px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
 .button {
-    height: 60px;
-    max-width: 200px;
-    width: 100%;
+    min-height: 60px;
+    min-width: 200px;
     display: inline-block;
     background-color: #a3bbc8;
     color: #fff;
@@ -37,7 +43,7 @@ body {
     position: relative;
     outline: black;
     transition: background-color 0.4s,
-    color 0.4s;
+        color 0.4s;
 
     &::after {
         content: '';
@@ -49,10 +55,10 @@ body {
         right: 12px;
         bottom: 17px;
     }
-&:hover {
-    background-color: #fd5e36;
-    color: black;
-}
+    &:hover {
+        background-color: #fd5e36;
+        color: black;
+    }
 }
 
 .button-filter {
@@ -98,13 +104,14 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-.logo {
-    width: 50px;
-    height: 50px;
-    fill: #a3bbc8;
-}
 .icon {
     width: 16px;
     height: 16px;
+}
+.menu-btn {
+    display: none;
+}
+
+.filters-btn {
+    display: none;
 }

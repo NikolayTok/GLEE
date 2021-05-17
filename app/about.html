@@ -10,11 +10,20 @@
 
 <body>
     <header class="header">
+        <button class="menu-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#AAAAAB" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <span class="sr-only">Menu</span>
+        </button>
+        <h1 class="title sr-only">Glee</h1>
+
         <div class="conteiner">
             <div class="header__inner">
 
                 <a href="#" class="logo">
-                    <img src="images/logo.svg" alt="GLEE">
+                    <img class="logo__img" src="images/logo.svg" alt="GLEE">
                 </a>
 
                 <nav class="menu">
@@ -85,8 +94,9 @@
                 </div>
             </div>
         </div>
+    </header>
 
-
+    <main>
         <div class="breadcrumbs">
             <h2 class="breadcrumbs__title title">
                 About us
@@ -100,9 +110,6 @@
                 </li>
             </ul>
         </div>
-    </header>
-
-    <main>
         <section class="mission">
             <div class="conteiner-inner">
 
@@ -156,7 +163,7 @@
                 </div>
             </div>
         </section>
-        <div class="achievements-btn">
+      <div class="achievements-btn">
             <div class="conteiner-inner">
                 <div class="achievements-btn__content">
                     <div class="achievements-btn__item">
@@ -191,7 +198,7 @@
             </div>
         </div>
 
-        <section class="team">
+          <section class="team">
             <div class="conteiner-inner">
                 <div class="team__inner">
                     <div class="team__desc">
@@ -311,7 +318,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="portfolio">
             <div class="conteiner-inner">
@@ -443,7 +450,7 @@
 
                 <div class="footer__inner footer__inner--logo">
 
-                    <a href="#" class="logo"><img src="images/logo.svg" alt="GLEE"></a>
+                    <a href="#" class="logo footer__logo"><img src="images/logo.svg" alt="GLEE"></a>
 
                     <ul class="footer__list">
                         <li class="footer__item">
@@ -529,36 +536,36 @@
                         update protidin.
                     </p>
 
-                    <form action="">
-                        <input class="form__input" name="email" type="email" placeholder="Email address">
-                        <button type="submit" class="form__button">Subscribe</button>
+                    <form class="footer__form" action="">
+                        <input class="footer__input" name="email" type="email" placeholder="Email address">
+                        <button type="submit" class="footer__button">Subscribe</button>
                     </form>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <div class="footer-copy">
+            <div class="footer__bottom">
+                <div class="footer__copy">
                     ©2020 CopyRight Example. All rights reserved.
                 </div>
-                <nav class="footer-bottom__nav">
-                    <ul class="footer-bottom__menu">
-                        <li class="footer-bottom__item">
-                            <a href="#" class="footer-bottom__link">
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li class="footer__subitem">
+                            <a href="#" class="footer__sublink">
                                 Home
                             </a>
                         </li>
-                        <li class="footer-bottom__item">
-                            <a href="#" class="footer-bottom__link">
+                        <li class="footer__subitem">
+                            <a href="#" class="footer__sublink">
                                 About
                             </a>
                         </li>
-                        <li class="footer-bottom__item">
-                            <a href="#" class="footer-bottom__link">
+                        <li class="footer__subitem">
+                            <a href="#" class="footer__sublink">
                                 Blog
                             </a>
                         </li>
-                        <li class="footer-bottom__item">
-                            <a href="#" class="footer-bottom__link">
+                        <li class="footer__subitem">
+                            <a href="#" class="footer__sublink">
                                 Contact
                             </a>
                         </li>

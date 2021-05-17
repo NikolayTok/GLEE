@@ -16,15 +16,15 @@ const svgSprite = require('gulp-svg-sprite');
 
 function svgSprites() {
     return src('app/images/icon/**.svg')
-    .pipe(svgSprite({
-      mode: {
-        stack: {
-          sprite: '../sprite.svg'
-        }
-      }
-    }))
-    .pipe(dest('app/images'))
-  }
+        .pipe(svgSprite({
+            mode: {
+                stack: {
+                    sprite: '../sprite.svg'
+                }
+            }
+        }))
+        .pipe(dest('app/images'))
+}
 /*--     автоматическое обновления страницы в браузере     --*/
 function browsersync() {
     browserSync.init({
@@ -57,6 +57,8 @@ function scripts() {
             'node_modules/jquery/dist/jquery.js',
             'node_modules/slick-carousel/slick/slick.js',
             'node_modules/mixitup/dist/mixitup.js',
+            'node_modules/star-rating-svg/src/jquery.star-rating-svg.js',
+            'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
             'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
             'app/js/main.js'
         ])
